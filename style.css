@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #cfe8f8;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.character {
+  position: relative;
+}
+
+.character img {
+  max-width: 200px;
+}
+
+.message-bubble {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  background: white;
+  border: 2px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  color: red;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.board {
+  background: #333;
+  color: white;
+  padding: 40px 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+
+.board h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.board h1 .error {
+  color: red;
+  margin: 0 5px;
+}
+
+.board p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 40px;
+  transition: background 0.3s;
+
+}
+
+.btn:hover {
+  background: #cc0000;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+  
+    align-items: center;
+  }
+
+  .character img {
+    max-width: 150px;
+  }
+
+  .board {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .board h1 {
+    font-size: 2rem;
+  }
+
+  .board p {
+    font-size: 1rem;
+  }
+}
